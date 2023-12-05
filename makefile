@@ -1,8 +1,7 @@
-all: main
+all: checkers
 
-test1: main.c board.c 
-	gcc -Wall -std=c99 -o program main.c board.c
+checkers: main.cpp board.cpp 
+	g++ -Wall -std=c++11 -o checkers main.cpp board.cpp 
 
 clean:
-	rm -f main
-
+	rm -f checkers
